@@ -41,30 +41,18 @@ Watch what happens on the receiver!
 ### sender.py
 ```
 $ python3 sender.py
-string sent: sample string
-two doubles sent: 1234.56789, 9876.12345
-numpy array sent: [[ 0  1  2  3  4  5  6  7]
- [ 8  9 10 11 12 13 14 15]]
-one double and numpy array sent: 1234.56789, [[0 1 2 3]
- [4 5 6 7]]
+string size: VGA or HD
+int fps: 30
+string format YUV420
 ```
 
 ### receiver (C)
 ```
 $ ./receiver
-*** New message received ***
-Raw data: 73 61 6D 70 6C 65 20 73 74 72 69 6E 67 00 00 00
-Interpreted as string:   sample string
-*** New message received ***
-Raw data: E7 C6 F4 84 45 4A 93 40 58 A8 35 CD 0F 4A C3 40
-Interpreted as two doubles: 1234.567890, 9876.123450
-*** New message received ***
-Raw data: 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
-Interpreted as array: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
-*** New message received ***
-Raw data: E7 C6 F4 84 45 4A 93 40 00 01 02 03 04 05 06 07
-Interpreted as one double and array: 1234.567890, 0 1 2 3 4 5 6 7
-
+Raw data: 56 47 41 00 1E 00 00 00 59 55 56 34 32 30 00 00
+SIZE: VGA
+FPS: 30
+FORMAT : YUV420
 ```
 
 ## References
