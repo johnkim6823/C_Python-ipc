@@ -60,3 +60,7 @@ FORMAT : YUV420
 http://weifan-tmm.blogspot.kr/2015/09/invoke-floating-point-logic-set-option_4.html  
 
 http://forum.falinux.com/zbxe/index.php?document_srl=420147&mid=C_LIB
+
+## ISSUE need to FIX
+
+1. String length difference from SIZE and FORMAT
