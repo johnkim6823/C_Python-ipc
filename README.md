@@ -63,4 +63,4 @@ http://forum.falinux.com/zbxe/index.php?document_srl=420147&mid=C_LIB
 
 ## ISSUE need to FIX
 
-1. String length difference from SIZE and FORMAT
+String length difference from SIZE and FORMAT
