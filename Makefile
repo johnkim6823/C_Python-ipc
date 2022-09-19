@@ -1,14 +1,13 @@
-CC=gcc
-OBJ=main_sender.o main_receiver.o
-TARGET=sender receiver
+GCC =g++
+OBJ = main_receiver.o
+TARGET = receiver
 
 
-%.o: %.c
-	$(CC) -c -o $@ $<
+%.o: %.cpp
+	$(GCC) -c -o $@ $<
 
 all: $(OBJ)
-	$(CC) -o sender main_sender.o
-	$(CC) -o receiver main_receiver.o
+	$(GCC) -o receiver main_receiver.o
 
 clean:
 	rm -f $(OBJ) $(TARGET)

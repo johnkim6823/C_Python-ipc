@@ -1,5 +1,5 @@
 
-int TYPE_STRING = 1;
-int TYPE_TWODOUBLES = 2;
-int TYPE_ARRAY = 3;
-int TYPE_DOUBLEANDARRAY = 4;
+int TYPE_SIZE = 1;
+int TYPE_FPS = 2;
+int TYPE_FORMAT = 3;
+int TYPE_CAMERA_CFG = 4;
