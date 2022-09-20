@@ -6,7 +6,7 @@
 #include <sys/msg.h>
 #include "type_definitions.h"
 
-#define  BUFF_SIZE 12
+#define  BUFF_SIZE 6
 
 using namespace std;
 
@@ -45,12 +45,11 @@ int main( void)
 		
 		if (data.data_type == TYPE_CAMERA_CFG) {
 			memcpy(&size, data.data_buff, sizeof(unsigned char));
-			memcpy(&format, data.data_buff+sizeof(unsigned char), sizeof(int));
-			memcpy(&fps, data.data_buff+sizeof(unsigned char)+sizeof(int), sizeof(int));
-			cout << "SIZE: " << size << endl;				
-			cout << "FPS: " << fps << endl;
-			cout << "FORMAT : " << format << endl;
-	
+			memcpy(&format, data.data_buff+sizeof(unsigned char), sizeof(unsigned char));
+			memcpy(&fps, data.data_buff+sizeof(unsigned char)*2, sizeof(int));
+			cout << (int)size << endl;
+			cout << (int)format << endl;
+			cout << fps << endl;
 		}
 	}
 }

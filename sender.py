@@ -13,14 +13,15 @@ if __name__ == '__main__':
     msg_size = VGA
     msg_fps = 30
     msg_format = YUV420
-    
+    print(VGA)
+    print(YUV420)
     try:
         mq = sysv_ipc.MessageQueue(1234, sysv_ipc.IPC_CREAT)
         
         # by HEADER
-        header = bytearray(HEADER_SIZE)
+        header = bytearray(6)
         fmt_str = "<BBi" 
-        struct.pack_into(fmt_str, header, 0, msg_size, msg_format, msg_fps) 
+        struct.pack_into(fmt_str, header, 0, 0x01, 0x21, msg_fps) 
         print (header)
         mq.send(header, True, type=TYPE_CAMERA_CFG)
 
