@@ -8,6 +8,8 @@
 
 using namespace std;
 
+#define BUFF_SIZE  6
+
 typedef struct {
 	long  data_type;
 	unsigned char  data_buff[BUFF_SIZE];

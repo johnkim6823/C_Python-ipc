@@ -1,6 +1,6 @@
 GCC =g++
-OBJ = main_receiver.o, main_sender.o
-TARGET = receiver, sender
+OBJ = main_sender.o main_receiver.o
+TARGET = sender receiver
 
 
 %.o: %.cpp

@@ -19,3 +19,4 @@ try:
             print(f"Interpret as BBi: {camera_cfg_recv}")
 
 except sysv_ipc.ExistentialError:
+    print("ERROR: message queue creation failed")

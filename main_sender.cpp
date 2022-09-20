@@ -8,6 +8,10 @@
 
 #include "type_definitions.h"
 
+#define BUFF_SIZE 6
+
+using namespace std;
+
 typedef struct {
 	long  data_type;
 	char  data_buff[BUFF_SIZE];

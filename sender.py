@@ -17,7 +17,7 @@ if __name__ == '__main__':
         # by HEADER
         header = bytearray(6)
         fmt_str = "<BBi" 
-        struct.pack_into(fmt_str, header, 0, 0x01, 0x21, msg_fps) 
+        struct.pack_into(fmt_str, header, 0, msg_size, msg_format, msg_fps) 
         print (header)
         mq.send(header, True, type=TYPE_CAMERA_CFG)
 
