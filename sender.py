@@ -3,9 +3,6 @@
 import sysv_ipc
 import struct
 
-BUFF_SIZE = 8
-INT_SIZE = 4
-
 from type_definitions import *
 
 if __name__ == '__main__':
@@ -13,8 +10,7 @@ if __name__ == '__main__':
     msg_size = VGA
     msg_fps = 30
     msg_format = YUV420
-    print(VGA)
-    print(YUV420)
+
     try:
         mq = sysv_ipc.MessageQueue(1234, sysv_ipc.IPC_CREAT)
         
