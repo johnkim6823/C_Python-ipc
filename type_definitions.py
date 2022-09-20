@@ -1,5 +1,8 @@
 #Message Type
-TYPE_CAMERA_CFG = 1;
+TYPE_CAMERA_CFG = 1
+
+#Header size
+header_size = 12
 
 #SIZE 
 VGA = 0x01
