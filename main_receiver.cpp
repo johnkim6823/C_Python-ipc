@@ -6,8 +6,6 @@
 #include <sys/msg.h>
 #include "type_definitions.h"
 
-#define  BUFF_SIZE 6
-
 using namespace std;
 
 typedef struct {
