@@ -2,7 +2,7 @@
 TYPE_CAMERA_CFG = 1
 
 #Header size
-HEADER_SIZE = 12
+HEADER_SIZE = 6
 
 #SIZE 
 VGA = 0x01
